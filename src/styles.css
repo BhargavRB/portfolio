@@ -1,0 +1,262 @@
+/* styles.css */
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  border-bottom: 3px solid #e44d26;
+  padding-bottom: 0.5rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.header p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #e44d26;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.button:hover {
+  background-color: #c63d1b;
+}
+
+/* Navigation Styles */
+.navigation {
+  background-color: #444;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+  color: #e44d26;
+}
+
+/* Section Styles */
+section {
+  background-color: #fff;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.about-section .education {
+  margin-top: 1.5rem;
+}
+
+.about-section .education h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-section .education ul {
+  padding-left: 20px;
+}
+
+/* Skills Section */
+.skills-section .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.skills-section .skill-item {
+  background-color: #f0f0f0;
+  padding: 0.75rem;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* Experience Section */
+.experience-section .experience-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.experience-section .experience-duration {
+  font-style: italic;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.experience-section .experience-role {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.experience-section ul {
+  padding-left: 20px;
+}
+
+/* Projects Section */
+.projects-section .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.projects-section .project-item {
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Contact Section */
+.contact-section {
+  text-align: center;
+  padding: 3rem 0;
+  background-color: #eee;
+}
+
+.contact-section .contact-details {
+  margin-bottom: 1.5rem;
+}
+
+.contact-section .contact-details p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.contact-section .social-links {
+  margin-top: 1.5rem;
+}
+
+.contact-section .social-links a {
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  color: #e44d26;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-section .social-links a:hover {
+  color: #c63d1b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .header {
+    padding: 1.5rem 0;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .header p {
+    font-size: 1.2rem;
+  }
+
+  .navigation {
+    padding: 0.5rem 0;
+  }
+
+  .navigation a {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Skills Section */
+.skills-section .skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skills-section .skills-list div {
+  font-size: 1.1rem;
+}
+
+.skills-section .skills-list strong {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
